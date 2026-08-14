@@ -7,6 +7,7 @@
 ```
 product/   产品经理相关 —— 通用底座（板块①–⑦ + 全景 + 附录）
 skill/     skill 相关  —— AI 增补层（板块⑧–⑪）
+xmind/     全书总结导图 —— 思维导图成品 + 源文件（.md）
 ```
 
 ## 分支规范（git flow）
@@ -51,3 +52,4 @@ AI 增补层（skill/）：
   - [09 模型评估与数据闭环](skill/09-模型评估与数据闭环/README.md)
   - [10 信任安全与伦理合规](skill/10-信任安全与伦理合规/README.md)
   - [11 AI 产品经济学](skill/11-AI产品经济学/README.md)
+- [xmind/](xmind/README.md) — 全书总结导图（3 张 sheet：板块式 / 大表 / 阶段式）
