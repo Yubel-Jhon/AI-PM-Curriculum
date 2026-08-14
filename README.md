@@ -53,3 +53,4 @@ AI 增补层（skill/）：
   - [10 信任安全与伦理合规](skill/10-信任安全与伦理合规/README.md)
   - [11 AI 产品经济学](skill/11-AI产品经济学/README.md)
 - [xmind/](xmind/README.md) — 全书总结导图（3 张 sheet：板块式 / 大表 / 阶段式）
+  - [全书总结 · 思维导图（GitHub 直接看）](xmind/全书总结-思维导图.md) ← 图形化，点开就能看
