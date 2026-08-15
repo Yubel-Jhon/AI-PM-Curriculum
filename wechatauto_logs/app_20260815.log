@@ -4,3 +4,7 @@
 2026-08-15 09:35:10 [wechatauto] [INFO] [guia.py:403]  WeChatGUI 初始化成功：hwnd=2295880, render=133216, rect=(-1279, -163, -1, 988)
 2026-08-15 09:35:19 [wechatauto] [INFO] [uia_driver.py:428]  已热激活微信 UIA 树：PID=14768 Weixin.dll+0xa86ac18: 0 -> 1
 2026-08-15 09:35:19 [wechatauto] [INFO] [guia.py:1157]  已启用 UIA 驱动（混合路径：UIA 优先，OCR 兜底）
+2026-08-15 14:32:18 [wechatauto] [DEBUG] [guia.py:234]  WinInput 初始化，屏幕尺寸：2560x1440
+2026-08-15 14:32:18 [wechatauto] [INFO] [guia.py:696]  已加载布局校准：sidebar_ratio=0.220
+2026-08-15 14:32:18 [wechatauto] [INFO] [guia.py:403]  WeChatGUI 初始化成功：hwnd=2295880, render=133216, rect=(-1926, -160, -648, 991)
+2026-08-15 14:32:18 [wechatauto] [INFO] [guia.py:1157]  已启用 UIA 驱动（混合路径：UIA 优先，OCR 兜底）
