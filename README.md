@@ -1,54 +1,31 @@
 # AI-PM-Curriculum
 
-产品经理就业知识体系 · AI 增补版课程仓库。
+产品经理就业知识体系 · AI 增补版 —— AI 产品经理的完整知识 + 面试弹药库。
 
-## 目录结构（以内容为主）
+## 这是什么
 
-```
-product/   产品经理相关 —— 通用底座（板块①–⑦ + 全景 + 附录）
-skill/     skill 相关  —— AI 增补层（板块⑧–⑪）
-```
+一套「AI 产品经理」学习体系，11 个能力板块（通用底座 ①–⑦ + AI 增补层 ⑧–⑪），从「每个概念是什么」一路讲到「面试怎么答」。知识只存一份，不堆叠。
+
+## 目录结构
+
+| 目录 | 作用 |
+|---|---|
+| `curriculum/` | **知识主体**：11 板块深度详解（概念 → 缓解方法 → 落地 → 面试话术） |
+| `cases/` | **案例与方法模板**：PRD 14 章写法 + 微信 AI 打车助手 BRD/MRD/FSD/PRD 全量示例 |
+| `interview/` | **面试实战**：方法论（红黑榜/面经/2026 新考点）+ 25 张高频题刷题卡 |
+| `ppt/` | **宣讲产物**：课程全景 pptx + 行业报告 pptx |
+| `AI-Agent行业报告/` | 独立行业研究报告（Agent 现状 + 投资建议） |
+
+## 从哪开始
+
+1. 先看 [`curriculum/00-全景与阅读地图.md`](curriculum/00-全景与阅读地图.md) —— 建立地图 + 阅读顺序。
+2. 系统学：`curriculum/` 01 → 05 顺序吃透。
+3. 动手写：翻 `cases/` 的 PRD 14 章写法 + 全量案例。
+4. 考前刷：`interview/` 的方法论 + 刷题卡。
 
 ## 分支规范（git flow）
 
-- `main`：主干 / 发布分支。只接受 `develop` 的 merge，发布后打 tag。
-- `develop`：开发分支。基于 `main` 拉取，开发增量特性。
+- `main`：主干 / 发布分支，只接受 `develop` 的 merge，发布后打 tag。
+- `develop`：开发分支，基于 `main` 拉取。
 
-流程：`develop` 基于 `main` 拉取 → 开发增量特性 → merge 回 `main` → `main` 发布 → 基于 `main` 打 tag。
-
-> 内容以目录划分，`main` / `develop` 的区分以 branch 划分，二者不互相迁移。
-
-## 全景
-
-```
-通用底座（product/）：
-  ① 需求  ② 规划设计  ③ 项目管理  ④ 数据分析  ⑤ 商业战略
-  翻译     落地         交付         验证         方向
-  ⑥ 沟通协作（放大器）→ 让 ①–⑤ 推得动
-  ⑦ 学习与自我修养（底色）→ 决定天花板
-
-AI 增补层（skill/）：
-  ⑧ AI 技术认知          → 判断「能不能做」
-  ⑨ 模型评估与数据闭环    → 验证「做得好不好」
-  ⑩ 信任安全与伦理合规    → 守住「底线」
-  ⑪ AI 产品经济学        → 算清「值不值、赚不赚」
-```
-
-## 目录导航
-
-- [product/](product/README.md) — 通用底座（产品经理相关）
-  - [00 全景与使用说明](product/00-全景与使用说明/README.md)
-  - [01 需求能力](product/01-需求能力/README.md)
-  - [02 规划设计](product/02-规划设计/README.md)
-  - [03 项目管理](product/03-项目管理/README.md)
-  - [04 数据分析](product/04-数据分析/README.md)
-  - [05 商业战略](product/05-商业战略/README.md)
-  - [06 沟通协作](product/06-沟通协作/README.md)
-  - [07 学习与自我修养](product/07-学习与自我修养/README.md)
-  - [附录](product/附录/README.md)
-- [skill/](skill/README.md) — AI 增补层（skill 相关）
-  - [08 AI 技术认知](skill/08-AI技术认知/README.md)
-  - [09 模型评估与数据闭环](skill/09-模型评估与数据闭环/README.md)
-  - [10 信任安全与伦理合规](skill/10-信任安全与伦理合规/README.md)
-  - [11 AI 产品经济学](skill/11-AI产品经济学/README.md)
-- 📷 每个章节文件夹内都有一张 `思维导图.png`，是该板块的图形化总结（点进章节直接看）
+流程：`develop` 改 → merge 回 `main` → `main` 打 tag。

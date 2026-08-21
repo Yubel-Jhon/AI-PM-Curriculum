@@ -1,0 +1,52 @@
+name: agent-intel-daily
+
+on:
+  schedule:
+    # 每天 09:17 北京时间(UTC+8 -> 01:17 UTC),避开整点
+    - cron: "17 1 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # 脚本层:抓 -> 解析 -> 核验 -> diff。纯标准库 + 内置 gh CLI,无需装依赖。
+      - name: 跑脚本层 (fetch -> parse -> verify -> diff)
+        working-directory: agent-intel
+        run: |
+          python scripts/fetch.py
+          python scripts/parse.py
+          python scripts/verify.py
+          python scripts/diff.py
+
+      # 有增量才提交推送;推送会触发你本地的 wechatauto-replica -> 微信通知。
+      - name: 有增量则提交并推送
+        working-directory: agent-intel
+        run: |
+          TODAY=$(date +%F)
+          DELTA="data/raw/$TODAY/delta.json"
+          N=0
+          if [ -f "$DELTA" ]; then
+            N=$(python -c "import json;print(len(json.load(open('$DELTA'))))")
+          fi
+          if [ "$N" -gt 0 ]; then
+            cp "$DELTA" data/latest_delta.json
+            git config user.name "agent-intel-bot"
+            git config user.email "agent-intel-bot@users.noreply.github.com"
+            git add data/latest_delta.json
+            git commit -m "agent-intel: $TODAY 增量($N)" || echo "无变更可提交"
+            git push
+          else
+            echo "今日无增量,跳过推送"
+          fi
