@@ -48,7 +48,7 @@
           <attvalue for="0" value="category"/>
           <attvalue for="1" value="interview"/>
           <attvalue for="2" value="目录"/>
-          <attvalue for="3" value="面试方法论 + 25 张高频题刷题卡"/>
+          <attvalue for="3" value="面试方法论 + 28 张高频题刷题卡"/>
           <attvalue for="4" value="interview/"/>
         </attvalues>
       </node>
@@ -655,12 +655,12 @@
           <attvalue for="4" value="interview/面试方法论.md"/>
         </attvalues>
       </node>
-      <node id="doc-interview-cards" label="高频题刷题卡(25张)">
+      <node id="doc-interview-cards" label="高频题刷题卡(28张)">
         <attvalues>
           <attvalue for="0" value="doc"/>
           <attvalue for="1" value="interview"/>
           <attvalue for="2" value="面试"/>
-          <attvalue for="3" value="25 张高频题答题要点+追问链+雷区"/>
+          <attvalue for="3" value="28 张高频题答题要点+追问链+雷区"/>
           <attvalue for="4" value="interview/高频题刷题卡.json"/>
         </attvalues>
       </node>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI-PM 面试备考教案（A4 打印版）</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #e8e8e2; }
+  body { font-family: "Microsoft YaHei", "PingFang SC", -apple-system, sans-serif; color: #1a1a1a; line-height: 1.65; }
+
+  @page { size: A4; margin: 14mm 15mm 16mm; }
+
+  .page { background: #fff; }
+  h1 { font-size: 22px; border-bottom: 3px solid #111; padding-bottom: 8px; margin-bottom: 6px; }
+  .sub { color: #555; font-size: 12.5px; margin-bottom: 16px; }
+  h2 { font-size: 17px; margin: 24px 0 10px; padding: 6px 10px; background: #111; color: #fff; border-radius: 3px; }
+  h3 { font-size: 14.5px; margin: 16px 0 6px; color: #111; }
+  p, li { font-size: 13px; }
+  ul, ol { padding-left: 22px; }
+  li { margin: 4px 0; }
+  table { border-collapse: collapse; width: 100%; margin: 8px 0; font-size: 12.5px; }
+  th, td { border: 1px solid #bbb; padding: 5px 8px; text-align: left; vertical-align: top; }
+  th { background: #eee; font-weight: 600; }
+  .bl { display: inline-block; min-width: 11em; border-bottom: 1px solid #666; height: 1.3em; vertical-align: bottom; }
+  .bl-sm { min-width: 6em; }
+  .tag { display: inline-block; font-size: 11px; padding: 0 6px; border-radius: 3px; background: #eee; color: #444; margin-right: 3px; }
+  .tag.fill { background: #fdeaea; color: #b00000; border: 1px solid #e0b4b4; }
+  .tag.back { background: #eaf4ea; color: #0a7a0a; border: 1px solid #b4d0b4; }
+  .note { color: #777; font-size: 12px; }
+
+  /* 手写横线：真边框线，打印可见 */
+  .q { font-size: 13px; margin: 10px 0 0; font-weight: 600; }
+  .q .cb { font-weight: 400; }
+  .nl { margin: 1px 0 12px; }
+  .nl div { border-bottom: 1px solid #c9c9c9; height: 32px; }
+
+  @media screen {
+    .page { width: 210mm; margin: 0 auto 20px; padding: 12mm 14mm; box-shadow: 0 1px 5px rgba(0,0,0,.18); }
+  }
+  @media print {
+    html, body { background: #fff; }
+    .page { width: auto; margin: 0; padding: 0; box-shadow: none; }
+    h2 { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    th { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .pb { page-break-before: always; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+<h1>AI-PM 面试备考教案</h1>
+<div class="sub">A4 打印版 · 记笔记用 ｜ <span class="tag back">✅ 直接背</span>（答案去 curriculum / 刷题卡 / 方法论）｜ <span class="tag fill">✍️ 必须自己补</span>（留白手写）｜ 每题下面横线 = 留给你写「完整答案」的行</div>
+
+<div class="note" style="margin-bottom:4px;"><b>怎么用：</b>概念去 <code>curriculum/02–05</code>、题目去 <code>高频题刷题卡.json</code>、红黑榜去 <code>面试方法论.md §5.7.1</code>。✍️ 部分是任何资料替不了你的。背得再熟，项目里没真数字、没踩坑，深挖照样挂。</div>
+
+<!-- ============ 一、补 ============ -->
+<h2>一、✍️ 必须你自己补的（重点，留白手写）</h2>
+
+<h3>1. 挖透 1 个真实 AI 项目（最重要，能经 3 层追问）</h3>
+<table>
+  <tr><th style="width:105px;">要素</th><th>填你的（别写「我们」，写「我」）</th></tr>
+  <tr><td>项目背景</td><td>一句话业务背景 + 目标数字：<span class="bl"></span></td></tr>
+  <tr><td>我的职责</td><td><span class="bl" style="min-width:26em;"></span></td></tr>
+  <tr><td>关键决策①</td><td>为什么选 RAG 不用微调 / 为什么选这个模型：<span class="bl" style="min-width:18em;"></span></td></tr>
+  <tr><td>关键决策②</td><td><span class="bl" style="min-width:26em;"></span></td></tr>
+  <tr><td>最大难点</td><td>困难 + 我怎么定位 + 怎么解决：<span class="bl" style="min-width:16em;"></span></td></tr>
+  <tr><td>结果数据</td><td>别只说「上线了」，写「采纳率从 <span class="bl bl-sm"></span> 到 <span class="bl bl-sm"></span>」</td></tr>
+</table>
+<div class="nl" data-n="5"></div>
+
+<h3>2. 5 个 AI 产品的真实使用体验（能说清交互逻辑 + 产品思维）</h3>
+<table>
+  <tr><th>产品</th><th>交互逻辑（它怎么设计的）</th><th>产品定位</th><th>一个改进点</th></tr>
+  <tr><td>ChatGPT</td><td></td><td></td><td></td></tr>
+  <tr><td>Claude</td><td></td><td></td><td></td></tr>
+  <tr><td>Kimi</td><td></td><td></td><td></td></tr>
+  <tr><td>豆包</td><td></td><td></td><td></td></tr>
+  <tr><td>（第5个）</td><td></td><td></td><td></td></tr>
+</table>
+<div class="nl" data-n="4"></div>
+
+<h3>3. 亲手做过的 demo（2026 每场必问，没做过答不出细节）</h3>
+<div class="q">RAG demo（切分→向量库→召回→rerank→生成）：踩过的坑 + 解法</div>
+<div class="nl" data-n="5"></div>
+<div class="q">Skills / vibe coding 搓的 demo：做了什么、出 bug 怎么办（边界认知）</div>
+<div class="nl" data-n="5"></div>
+
+<h3>4. 1–2 个「因伦理/风险叫停项目」的行为故事</h3>
+<p class="note">风险识别 → 叫停理由 → 替代方案 → 结果</p>
+<div class="nl" data-n="6"></div>
+
+<h3>5. 60 秒自我介绍（一句话定位 → 1 个项目 → 为什么适合 → 收尾钩子）</h3>
+<div class="nl" data-n="5"></div>
+
+<h3>6. 简历包装（把普通活往「AI 落地 + 数据结果」上靠）</h3>
+<p>功能型 PM → 「产品全流程管理 + 引入 RAG 优化搜索推荐提升准确率 <span class="bl bl-sm"></span>%」</p>
+<p>B/C 端 → 「主动把大模型融入产品（<span class="bl" style="min-width:16em;"></span>）」</p>
+<p>你的具体数字：<span class="bl" style="min-width:20em;"></span></p>
+<div class="nl" data-n="3"></div>
+
+<h3>7. 2026 新考点 · 亲手体验记录（往年不考，现在每场问）</h3>
+<div class="q">Agent vs Workflow 区别 + 为什么选 workflow 不用 Agent</div><div class="nl" data-n="4"></div>
+<div class="q">Skills 是什么 / 怎么写 / 用 AI 怎么生成</div><div class="nl" data-n="4"></div>
+<div class="q">vibe coding 的理解 + 亲身感受</div><div class="nl" data-n="4"></div>
+<div class="q">为什么用 coze 不用更先进的工具 ｜ 当下最火的 Agent/Coding 工具</div><div class="nl" data-n="4"></div>
+
+<!-- ============ 二、背 ============ -->
+<h2 class="pb">二、✅ 要背的标准答案（勾掉一个过一个，笔记写横线上）</h2>
+
+<h3>1. 概念 4 大块（详解去 <code>curriculum/02–05</code>）</h3>
+<table>
+  <tr><th>板块</th><th>核心概念（☐ 逐个过关）</th></tr>
+  <tr><td>⑧ 技术认知</td><td>☐幻觉(两类+四层缓解) ☐RAG(三步+落地细节) ☐RAGvs微调 ☐Agent(四层) ☐WorkflowvsAgent ☐multi-agent ☐reflection ☐MCP ☐Skills ☐vibe coding ☐Transformer ☐LoRA ☐GRPO ☐上下文窗口</td></tr>
+  <tr><td>⑨ 评估与闭环</td><td>☐评测集怎么建 ☐离线vs在线指标 ☐准确率vs召回取舍 ☐LLM评LLM偏差 ☐数据闭环 ☐价值归因</td></tr>
+  <tr><td>⑩ 安全与伦理</td><td>☐发布门槛六关 ☐红线失败 ☐公平性 ☐可解释性 ☐隐私 ☐内容安全 ☐红队 ☐Prompt注入三层</td></tr>
+  <tr><td>⑪ 经济学</td><td>☐Token/推理成本 ☐单位经济(LTV>CAC+推理) ☐定价三模式 ☐模型选型四维 ☐数据飞轮护城河</td></tr>
+</table>
+<p class="note">每个概念写「类比 / 选型理由 / 边界 / 一个真实场景」四件套（缺一个就浅）。</p>
+<div class="q">⑧ 技术认知 · 话术卡片</div><div class="nl" data-n="6"></div>
+<div class="q">⑨ 评估与闭环 · 话术卡片</div><div class="nl" data-n="5"></div>
+<div class="q">⑩ 安全与伦理 · 话术卡片</div><div class="nl" data-n="5"></div>
+<div class="q">⑪ 经济学 · 话术卡片</div><div class="nl" data-n="5"></div>
+
+<h3>2. 六大题型破题框架（方法论 §2）</h3>
+<table>
+  <tr><th>题型</th><th>破题框架</th><th>心法</th></tr>
+  <tr><td>项目题</td><td>背景→目标→职责→关键决策→难点→结果</td><td>讲决策和取舍，不是讲流程</td></tr>
+  <tr><td>概念题</td><td>类比→定义→选型理由→边界→场景举例</td><td>概念必须绑场景</td></tr>
+  <tr><td>方案/业务题</td><td>红线失败→运营KPI→用户旅程+逃生阀→评测计划</td><td>先定「绝不能发生什么」</td></tr>
+  <tr><td>估算题</td><td>拆解公式→假设→量级校验</td><td>量级对即可，过程比结果重要</td></tr>
+  <tr><td>追问题</td><td>用数据/取舍理由/复盘回，不重复流程</td><td>追问考判断不是知识</td></tr>
+  <tr><td>压力题</td><td>承认→给依据→转方案，不硬刚</td><td>先接住再给数据</td></tr>
+</table>
+<div class="note">每个题型各套一个自己的例子走一遍，写下面。</div>
+<div class="nl" data-n="6"></div>
+
+<h3>3. ❌✅ 红黑榜 10 问（方法论 §5.7.1，写出「专业答」完整要点）</h3>
+<div class="q">☐ AI 功能该不该做？</div><div class="nl" data-n="4"></div>
+<div class="q">☐ 模型上线后效果不达预期怎么办？</div><div class="nl" data-n="4"></div>
+<div class="q">☐ 怎么判断 AI 能力达到上线标准？</div><div class="nl" data-n="4"></div>
+<div class="q">☐ 和技术团队有分歧怎么办？</div><div class="nl" data-n="4"></div>
+<div class="q">☐ 常用数据工具和方法？</div><div class="nl" data-n="4"></div>
+<div class="q">☐ 产品经理的价值？</div><div class="nl" data-n="4"></div>
+<div class="q">☐ 怎么判断功能是否成功？</div><div class="nl" data-n="4"></div>
+<div class="q">☐ 技术说需求无法实现？</div><div class="nl" data-n="4"></div>
+<div class="q">☐ 大量需求怎么定优先级？</div><div class="nl" data-n="4"></div>
+<div class="q">☐ AI 对 PM 岗位的影响？</div><div class="nl" data-n="4"></div>
+
+<!-- ============ 三、题库 ============ -->
+<h2 class="pb">三、☐ 高频题库 28 张（刷 <code>高频题刷题卡.json</code>，每题写完整答案）</h2>
+<p class="note">勾掉 = 不看卡能说出「要点 + 追问链 + 踩坑」。</p>
+
+<h3>概念题（11）</h3>
+<div class="q">☐ RAG 和微调怎么选？</div><div class="nl" data-n="4"></div>
+<div class="q">☐ 怎么解决幻觉？</div><div class="nl" data-n="4"></div>
+<div class="q">☐ 大模型 vs 小模型怎么选？</div><div class="nl" data-n="4"></div>
+<div class="q">☐ 怎么评估模型性能？</div><div class="nl" data-n="4"></div>
+<div class="q">☐ Agent 最易翻车在哪？</div><div class="nl" data-n="4"></div>
+<div class="q">☐ AI 上线前怎么把关？</div><div class="nl" data-n="4"></div>
+<div class="q">☐ Prompt 注入攻击怎么防？</div><div class="nl" data-n="4"></div>
+<div class="q">☐ Prompt / RAG / SFT 的区别？</div><div class="nl" data-n="4"></div>
+<div class="q">☐ GRPO 算法？DeepSeek 做了哪些改进？</div><div class="nl" data-n="4"></div>
+<div class="q">☐ Agent 和 workflow 的区别？为什么用 workflow？</div><div class="nl" data-n="4"></div>
+<div class="q">☐ 什么是 Skills？怎么写？用 AI 怎么生成？</div><div class="nl" data-n="4"></div>
+
+<h3>方案题（6）</h3>
+<div class="q">☐ 为豆包设计高级付费权益 / 差异化？</div><div class="nl" data-n="4"></div>
+<div class="q">☐ 手机/汽车/地图任选一个，大模型重做一遍？</div><div class="nl" data-n="4"></div>
+<div class="q">☐ 抖音/剪映深度集成 AI，要厘清哪些关键问题？</div><div class="nl" data-n="4"></div>
+<div class="q">☐ 怎么设计垂直领域大模型产品？</div><div class="nl" data-n="4"></div>
+<div class="q">☐ 企业知识库问答 Prompt 模板怎么设计？</div><div class="nl" data-n="4"></div>
+<div class="q">☐ 设计一个旅行规划 Agent，从哪些层面考虑？</div><div class="nl" data-n="4"></div>
+
+<h3>业务题（9）</h3>
+<div class="q">☐ Function Calling 失败率怎么定义可接受？无感降级？</div><div class="nl" data-n="4"></div>
+<div class="q">☐ 上线后次日/首周/首月分别关注什么数据？</div><div class="nl" data-n="4"></div>
+<div class="q">☐ 数据闭环对 AI 迭代的重要性？</div><div class="nl" data-n="4"></div>
+<div class="q">☐ API 按量 / SaaS 订阅 / 私有化怎么选？</div><div class="nl" data-n="4"></div>
+<div class="q">☐ 平时用哪些 AI 产品？分析交互逻辑和产品思维</div><div class="nl" data-n="4"></div>
+<div class="q">☐ 大模型哪些场景会被垂直小模型取代？</div><div class="nl" data-n="4"></div>
+<div class="q">☐ 对 vibe coding 的理解？亲身感受？</div><div class="nl" data-n="4"></div>
+<div class="q">☐ 为什么建了向量库还要保留 FAQ？转人工率 mock？</div><div class="nl" data-n="4"></div>
+<div class="q">☐ 怎么平衡模型性能和用户体验？</div><div class="nl" data-n="4"></div>
+
+<h3>追问题（1）</h3>
+<div class="q">☐ 采用什么微调方式？什么时间什么基模？为什么？提升多少？</div><div class="nl" data-n="5"></div>
+
+<h3>压力题（1）</h3>
+<div class="q">☐ 讲一个你因为伦理/风险叫停项目的经历</div><div class="nl" data-n="5"></div>
+
+<!-- ============ 四、真题 ============ -->
+<h2 class="pb">四、☐ 真题自测清单（一手面经原题，默写答题骨架）</h2>
+<p class="note">答案多在题库/概念里，这里写「骨架关键词」，每题 3 行。</p>
+
+<h3>抖音 AI 产品一面（19 题）</h3>
+<div class="q">☐ PRD 包含哪些内容</div><div class="nl" data-n="3"></div>
+<div class="q">☐ 你怎么进行竞品分析</div><div class="nl" data-n="3"></div>
+<div class="q">☐ 为什么想当产品经理</div><div class="nl" data-n="3"></div>
+<div class="q">☐ 介绍简历项目（为什么 LoRA 不全量、显卡、哪个模型）</div><div class="nl" data-n="3"></div>
+<div class="q">☐ Cursor 有哪些功能 / 发展方向</div><div class="nl" data-n="3"></div>
+<div class="q">☐ 除 Cursor 外还了解哪些同类产品</div><div class="nl" data-n="3"></div>
+<div class="q">☐ 介绍 Prompt、RAG、SFT 的区别</div><div class="nl" data-n="3"></div>
+<div class="q">☐ 有 Python/SQL、编程开发项目吗</div><div class="nl" data-n="3"></div>
+<div class="q">☐ DeepSeek 春节很火，做了哪些改进</div><div class="nl" data-n="3"></div>
+<div class="q">☐ 了解强化学习 GRPO 吗</div><div class="nl" data-n="3"></div>
+<div class="q">☐ 大模型发展趋势 / 上下文记忆理解</div><div class="nl" data-n="3"></div>
+<div class="q">☐ 用 AI 产品有做记录对比分析吗</div><div class="nl" data-n="3"></div>
+<div class="q">☐ 刷抖音关注到哪些 AI 工具 / 剪映 AI 怎么评价</div><div class="nl" data-n="3"></div>
+<div class="q">☐ 通过哪些渠道了解 AI 资讯 / 会读论文吗</div><div class="nl" data-n="3"></div>
+
+<h3>字节 AI 产品一面（8 题）</h3>
+<div class="q">☐ 挑一个 AI 产品分析交互逻辑背后的产品思维</div><div class="nl" data-n="3"></div>
+<div class="q">☐ 抖音/剪映集成 AI，要和技术厘清哪些关键问题</div><div class="nl" data-n="3"></div>
+<div class="q">☐ Function Calling 失败率 + 无感降级</div><div class="nl" data-n="3"></div>
+<div class="q">☐ 上线后次日/首周/首月核心数据</div><div class="nl" data-n="3"></div>
+<div class="q">☐ 数据闭环重要性 + 举例构建闭环</div><div class="nl" data-n="3"></div>
+<div class="q">☐ 为豆包设计高级付费版本权益</div><div class="nl" data-n="3"></div>
+<div class="q">☐ 豆包相对竞品的差异化</div><div class="nl" data-n="3"></div>
+<div class="q">☐ 协调设计/研发/算法/运营推动上线的经历</div><div class="nl" data-n="3"></div>
+
+<h3>字节 智能客服（面 A · 13 题）</h3>
+<div class="q">☐ 自我介绍 / 最成功项目 / 项目难点</div><div class="nl" data-n="3"></div>
+<div class="q">☐ <b>为什么建了向量库还要保留 FAQ</b></div><div class="nl" data-n="3"></div>
+<div class="q">☐ 你具体做了什么</div><div class="nl" data-n="3"></div>
+<div class="q">☐ <b>如何构建评测集</b></div><div class="nl" data-n="3"></div>
+<div class="q">☐ 选什么指标衡量效果</div><div class="nl" data-n="3"></div>
+<div class="q">☐ <b>转人工率容易被 mock 怎么处理</b></div><div class="nl" data-n="3"></div>
+<div class="q">☐ <b>智能客服如何保证知识时效性</b></div><div class="nl" data-n="3"></div>
+<div class="q">☐ <b>微调和 RAG 使用场景区别</b></div><div class="nl" data-n="3"></div>
+<div class="q">☐ 平时怎么学 AI 知识 / 为什么离职 / 团队期望</div><div class="nl" data-n="3"></div>
+
+<h3>字节 Agent/Skills（面 B · 11 题）</h3>
+<div class="q">☐ 自我介绍 / Agent 解决什么问题 / 你的角色</div><div class="nl" data-n="3"></div>
+<div class="q">☐ 举一个具体需求例子（内容/实现/交付）</div><div class="nl" data-n="3"></div>
+<div class="q">☐ <b>badcase 举例：用户原输入 vs 误理解</b></div><div class="nl" data-n="3"></div>
+<div class="q">☐ 怎么解决 badcase</div><div class="nl" data-n="3"></div>
+<div class="q">☐ <b>调 Prompt 怎么确认调好了、评估标准</b></div><div class="nl" data-n="3"></div>
+<div class="q">☐ 服务多个 Agent 怎么评估好坏</div><div class="nl" data-n="3"></div>
+<div class="q">☐ 调 Prompt 心得</div><div class="nl" data-n="3"></div>
+<div class="q">☐ <b>什么场景做思维链（CoT）</b></div><div class="nl" data-n="3"></div>
+<div class="q">☐ <b>你自己写过 Skills 吗、打算怎么写</b></div><div class="nl" data-n="3"></div>
+
+<!-- ============ 五、冲刺 ============ -->
+<h2 class="pb">五、☐ 考前冲刺清单（方法论 §6 + 5 天速成）</h2>
+<ol>
+  <li>☐ 挖透 1 个真实 AI 项目（第一部分第 1 项填完）</li>
+  <li>☐ 背熟 RAG / 幻觉 / 微调选型 / Agent 四概念的「类比+理由+边界」</li>
+  <li>☐ 5 个 AI 产品体验写进表格（第一部分第 2 项）</li>
+  <li>☐ 方案题框架「红线失败→KPI→逃生阀→评测计划」能默写</li>
+  <li>☐ 1–2 个伦理叫停故事（第一部分第 4 项）</li>
+  <li>☐ 3 道手撕题练过：AI 交互埋点文档 / RAG 效果评估表 / 微调数据清洗规则</li>
+  <li>☐ 2026 新考点亲手体验填完（第一部分第 7 项）</li>
+  <li>☐ 红黑榜 10 问 + 刷题卡 28 张全部勾掉</li>
+</ol>
+
+<p class="note" style="margin-top:16px;">背到最后一句收口：<b>结论 + 缓解方法 + 边界 + 一个真实场景</b>，四件套缺一个就「浅」。概念绑场景、选型给理由、风险给兜底——三环节缺一个就掉分。</p>
+
+</div>
+
+<script>
+document.querySelectorAll('.nl').forEach(function (el) {
+  var n = parseInt(el.getAttribute('data-n') || '3', 10);
+  for (var i = 0; i < n; i++) { el.appendChild(document.createElement('div')); }
+});
+</script>
+</body>
+</html>

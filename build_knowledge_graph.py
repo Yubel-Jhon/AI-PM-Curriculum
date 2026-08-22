@@ -24,7 +24,7 @@ NODES = [
     ("cat-cases", "cases · 案例与方法", "category", "cases", "目录",
      "PRD 14 章写法 + 微信 AI 打车助手 BRD/MRD/FSD/PRD 全量示例", "cases/"),
     ("cat-interview", "interview · 面试实战", "category", "interview", "目录",
-     "面试方法论 + 25 张高频题刷题卡", "interview/"),
+     "面试方法论 + 28 张高频题刷题卡", "interview/"),
     ("cat-ppt", "ppt · 宣讲产物", "category", "ppt", "目录",
      "课程全景 pptx + 行业报告 pptx", "ppt/"),
     ("cat-report", "AI-Agent 行业报告", "category", "report", "目录",
@@ -98,7 +98,7 @@ NODES = [
     ("case-fsd",    "案例 · FSD 微信AI打车助手", "case", "cases", "案例", "怎么做：功能规格说明", "cases/案例-FSD-微信AI打车助手.md"),
 
     ("doc-interview-method", "面试方法论",        "doc", "interview", "面试", "6 大题型破题框架+话术模板+面经实录", "interview/面试方法论.md"),
-    ("doc-interview-cards",  "高频题刷题卡(25张)","doc", "interview", "面试", "25 张高频题答题要点+追问链+雷区", "interview/高频题刷题卡.json"),
+    ("doc-interview-cards",  "高频题刷题卡(28张)","doc", "interview", "面试", "28 张高频题答题要点+追问链+雷区", "interview/高频题刷题卡.json"),
 
     ("doc-report",      "AI-Agent 行业现状报告", "doc", "report", "报告", "Agent 现状 + 投资建议", "AI-Agent行业报告/AI-Agent行业现状报告.md"),
     ("doc-ppt-cur",     "课程全景 PPT",          "doc", "ppt",    "宣讲", "AI-PM 课程全景 pptx", "ppt/AI-PM-Curriculum.pptx"),
