@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2">
+  <meta lastmodifieddate="2026-08-22">
+    <creator>AI-PM-Curriculum build_xhs_graph.py</creator>
+    <description>小红书 AI 产品经理面经知识图谱</description>
+  </meta>
+  <graph mode="static" defaultedgetype="directed">
+    <attributes class="node">
+      <attribute id="0" title="type" type="string"/>
+      <attribute id="1" title="module" type="string"/>
+      <attribute id="2" title="layer" type="string"/>
+      <attribute id="3" title="desc" type="string"/>
+      <attribute id="4" title="file" type="string"/>
+    </attributes>
+    <attributes class="edge">
+      <attribute id="0" title="rel" type="string"/>
+    </attributes>
+    <nodes>
+      <node id="root" label="小红书 AI-PM 面经">
+        <attvalues>
+          <attvalue for="0" value="root"/>
+          <attvalue for="1" value="总纲"/>
+          <attvalue for="2" value="总纲"/>
+          <attvalue for="3" value="小红书「AI产品经理面经」39 笔记 + 194 评论提炼成品：面试官视角 + 字节两面 + 2026 新考点"/>
+          <attvalue for="4" value=""/>
+        </attvalues>
+      </node>
+      <node id="cat-source" label="数据来源 · 小红书">
+        <attvalues>
+          <attvalue for="0" value="source"/>
+          <attvalue for="1" value="来源"/>
+          <attvalue for="2" value="来源"/>
+          <attvalue for="3" value="MediaCrawler 抓「AI产品经理面经」39 笔记 + 194 评论（原始文件 xhs_notes_full.txt 已丢，重抓见 5.7 开头）"/>
+          <attvalue for="4" value=""/>
+        </attvalues>
+      </node>
+      <node id="cat-interviewer" label="面试官视角红黑榜">
+        <attvalues>
+          <attvalue for="0" value="category"/>
+          <attvalue for="1" value="5.7.1"/>
+          <attvalue for="2" value="方法论"/>
+          <attvalue for="3" value="❌ 新手 vs ✅ 专业答法对照：AI 产品 5 问 + 通用 PM 5 问，可直接背"/>
+          <attvalue for="4" value="interview/面试方法论.md"/>
+        </attvalues>
+      </node>
+      <node id="cat-project" label="讲项目三层法">
+        <attvalues>
+          <attvalue for="0" value="category"/>
+          <attvalue for="1" value="5.7.2"/>
+          <attvalue for="2" value="方法论"/>
+          <attvalue for="3" value="功能层 → 设计层 → 工程交付层；模型选型正确讲法（多数人停第一层）"/>
+          <attvalue for="4" value="interview/面试方法论.md"/>
+        </attvalues>
+      </node>
+      <node id="cat-agent" label="Agent 四层设计">
+        <attvalues>
+          <attvalue for="0" value="category"/>
+          <attvalue for="1" value="5.7.3"/>
+          <attvalue for="2" value="方法论"/>
+          <attvalue for="3" value="规划 / 工具 / 记忆 / 状态评估四层 + 不确定性管理"/>
+          <attvalue for="4" value="interview/面试方法论.md"/>
+        </attvalues>
+      </node>
+      <node id="cat-byte" label="字节两面全录">
+        <attvalues>
+          <attvalue for="0" value="category"/>
+          <attvalue for="1" value="5.7.4"/>
+          <attvalue for="2" value="面经"/>
+          <attvalue for="3" value="面 A 智能客服 13 题（已 oc）+ 面 B Agent/Skills 11 题"/>
+          <attvalue for="4" value="interview/面试方法论.md"/>
+        </attvalues>
+      </node>
+      <node id="cat-2026" label="2026 新考点">
+        <attvalues>
+          <attvalue for="0" value="category"/>
+          <attvalue for="1" value="5.7.5"/>
+          <attvalue for="2" value="面经"/>
+          <attvalue for="3" value="27 届连面 9 场：Skills / vibe coding / Agent vs Workflow / AI 工具认知"/>
+          <attvalue for="4" value="interview/面试方法论.md"/>
+        </attvalues>
+      </node>
+      <node id="cat-others" label="其他公司速览">
+        <attvalues>
+          <attvalue for="0" value="category"/>
+          <attvalue for="1" value="5.7.6"/>
+          <attvalue for="2" value="面经"/>
+          <attvalue for="3" value="AI 独角兽 / 追觅 / 百度文心 + 5 天速成清单 + 简历包装"/>
+          <attvalue for="4" value="interview/面试方法论.md"/>
+        </attvalues>
+      </node>
+      <node id="co-interviewer" label="面试官">
+        <attvalues>
+          <attvalue for="0" value="company"/>
+          <attvalue for="1" value="通用"/>
+          <attvalue for="2" value="来源人"/>
+          <attvalue for="3" value="上午面 6 人复盘 +「听到这几句话基本都 pass」——视角最值钱"/>
+          <attvalue for="4" value="interview/面试方法论.md"/>
+        </attvalues>
+      </node>
+      <node id="co-byte" label="字节">
+        <attvalues>
+          <attvalue for="0" value="company"/>
+          <attvalue for="1" value="字节"/>
+          <attvalue for="2" value="公司"/>
+          <attvalue for="3" value="抖音电商智能客服（已 oc）+ 大模型产品实习（Agent/Skills 方向）"/>
+          <attvalue for="4" value="interview/面试方法论.md"/>
+        </attvalues>
+      </node>
+      <node id="co-27" label="27 届转 AI-PM">
+        <attvalues>
+          <attvalue for="0" value="company"/>
+          <attvalue for="1" value="通用"/>
+          <attvalue for="2" value="来源人"/>
+          <attvalue for="3" value="连面 9 场心得，2026 新考点一手拷打实录"/>
+          <attvalue for="4" value="interview/面试方法论.md"/>
+        </attvalues>
+      </node>
+      <node id="co-aiuc" label="AI 独角兽">
+        <attvalues>
+          <attvalue for="0" value="company"/>
+          <attvalue for="1" value="AI独角兽"/>
+          <attvalue for="2" value="公司"/>
+          <attvalue for="3" value="大模型 PM：一面 mentor + 二面 leader，伦理 + 数据质量二面标配"/>
+          <attvalue for="4" value="interview/面试方法论.md"/>
+        </attvalues>
+      </node>
+      <node id="co-dreame" label="追觅科技">
+        <attvalues>
+          <attvalue for="0" value="company"/>
+          <attvalue for="1" value="追觅"/>
+          <attvalue for="2" value="公司"/>
+          <attvalue for="3" value="智能硬件 AI-PM：家庭/商用场景落地 + 具身智能壁垒"/>
+          <attvalue for="4" value="interview/面试方法论.md"/>
+        </attvalues>
+      </node>
+      <node id="co-baidu" label="百度文心一言">
+        <attvalues>
+          <attvalue for="0" value="company"/>
+          <attvalue for="1" value="百度"/>
+          <attvalue for="2" value="公司"/>
+          <attvalue for="3" value="已 offer，0 互联网实习靠真实使用体验 + 横向对比上岸"/>
+          <attvalue for="4" value="interview/面试方法论.md"/>
+        </attvalues>
+      </node>
+      <node id="t-rag" label="RAG / 微调选型">
+        <attvalues>
+          <attvalue for="0" value="topic"/>
+          <attvalue for="1" value="选型"/>
+          <attvalue for="2" value="考点"/>
+          <attvalue for="3" value="FAQ vs 向量库分工、为什么大模型不微调、RAG+Rerank 三步"/>
+          <attvalue for="4" value="interview/面试方法论.md"/>
+        </attvalues>
+      </node>
+      <node id="t-faq" label="FAQ vs 向量库">
+        <attvalues>
+          <attvalue for="0" value="topic"/>
+          <attvalue for="1" value="RAG"/>
+          <attvalue for="2" value="考点"/>
+          <attvalue for="3" value="FAQ 管高频标准问（确定/快/可控），向量库管长尾模糊问，互补兜底"/>
+          <attvalue for="4" value="interview/面试方法论.md"/>
+        </attvalues>
+      </node>
+      <node id="t-evalset" label="评测集构建">
+        <attvalues>
+          <attvalue for="0" value="topic"/>
+          <attvalue for="1" value="评估"/>
+          <attvalue for="2" value="考点"/>
+          <attvalue for="3" value="定范围 → 定标准 → 交叉校验；技术指标必须绑业务价值"/>
+          <attvalue for="4" value="interview/面试方法论.md"/>
+        </attvalues>
+      </node>
+      <node id="t-mock" label="转人工率 mock 防护">
+        <attvalues>
+          <attvalue for="0" value="topic"/>
+          <attvalue for="1" value="智能客服"/>
+          <attvalue for="2" value="考点"/>
+          <attvalue for="3" value="解决率/满意度/一次解决率交叉校验，别只看单一转人工率"/>
+          <attvalue for="4" value="interview/面试方法论.md"/>
+        </attvalues>
+      </node>
+      <node id="t-fresh" label="知识时效性">
+        <attvalues>
+          <attvalue for="0" value="topic"/>
+          <attvalue for="1" value="智能客服"/>
+          <attvalue for="2" value="考点"/>
+          <attvalue for="3" value="知识库更新策略，保证智能客服答到最新的"/>
+          <attvalue for="4" value="interview/面试方法论.md"/>
+        </attvalues>
+      </node>
+      <node id="t-agent" label="Agent 设计 / 不确定性管理">
+        <attvalues>
+          <attvalue for="0" value="topic"/>
+          <attvalue for="1" value="Agent"/>
+          <attvalue for="2" value="考点"/>
+          <attvalue for="3" value="规划/工具/记忆/状态评估四层；核心=对不确定性的管理"/>
+          <attvalue for="4" value="interview/面试方法论.md"/>
+        </attvalues>
+      </node>
+      <node id="t-workflow" label="Workflow vs Agent">
+        <attvalues>
+          <attvalue for="0" value="topic"/>
+          <attvalue for="1" value="Agent"/>
+          <attvalue for="2" value="考点"/>
+          <attvalue for="3" value="确定性（预设流程）vs 自主性（自主规划），2026 必问"/>
+          <attvalue for="4" value="interview/面试方法论.md"/>
+        </attvalues>
+      </node>
+      <node id="t-skills" label="Skills">
+        <attvalues>
+          <attvalue for="0" value="topic"/>
+          <attvalue for="1" value="Agent"/>
+          <attvalue for="2" value="考点"/>
+          <attvalue for="3" value="可复用能力封装（指令+工具+示例），每场必问"/>
+          <attvalue for="4" value="interview/面试方法论.md"/>
+        </attvalues>
+      </node>
+      <node id="t-vibe" label="vibe coding">
+        <attvalues>
+          <attvalue for="0" value="topic"/>
+          <attvalue for="1" value="工具"/>
+          <attvalue for="2" value="考点"/>
+          <attvalue for="3" value="自然语言让 AI 写代码，适合 demo 不适合生产"/>
+          <attvalue for="4" value="interview/面试方法论.md"/>
+        </attvalues>
+      </node>
+      <node id="t-aitools" label="AI 工具认知">
+        <attvalues>
+          <attvalue for="0" value="topic"/>
+          <attvalue for="1" value="工具"/>
+          <attvalue for="2" value="考点"/>
+          <attvalue for="3" value="coze / 龙虾小龙虾，追当下最火工具，常备一个万能答案"/>
+          <attvalue for="4" value="interview/面试方法论.md"/>
+        </attvalues>
+      </node>
+      <node id="t-cot" label="思维链 CoT">
+        <attvalues>
+          <attvalue for="0" value="topic"/>
+          <attvalue for="1" value="技术"/>
+          <attvalue for="2" value="考点"/>
+          <attvalue for="3" value="什么场景做 CoT、预设关键步骤"/>
+          <attvalue for="4" value="interview/面试方法论.md"/>
+        </attvalues>
+      </node>
+      <node id="t-badcase" label="badcase 分析">
+        <attvalues>
+          <attvalue for="0" value="topic"/>
+          <attvalue for="1" value="评估"/>
+          <attvalue for="2" value="考点"/>
+          <attvalue for="3" value="举例到用户原输入 vs 误理解；带问题定位+归因+建议再找算法"/>
+          <attvalue for="4" value="interview/面试方法论.md"/>
+        </attvalues>
+      </node>
+      <node id="t-ethics" label="伦理隐私 + 数据质量">
+        <attvalues>
+          <attvalue for="0" value="topic"/>
+          <attvalue for="1" value="安全"/>
+          <attvalue for="2" value="考点"/>
+          <attvalue for="3" value="AI 独角兽二面标配：伦理隐私处理 + 数据质量处理"/>
+          <attvalue for="4" value="interview/面试方法论.md"/>
+        </attvalues>
+      </node>
+      <node id="t-dataloop" label="数据闭环">
+        <attvalues>
+          <attvalue for="0" value="topic"/>
+          <attvalue for="1" value="数据"/>
+          <attvalue for="2" value="考点"/>
+          <attvalue for="3" value="采集→清洗→标注→评估→迭代，真实数据喂飞轮"/>
+          <attvalue for="4" value="interview/面试方法论.md"/>
+        </attvalues>
+      </node>
+      <node id="qt-concept" label="概念题">
+        <attvalues>
+          <attvalue for="0" value="qtype"/>
+          <attvalue for="1" value="题型"/>
+          <attvalue for="2" value="题型"/>
+          <attvalue for="3" value="RAG / Agent / Skills / Workflow：类比+定义+选型理由+边界"/>
+          <attvalue for="4" value="interview/面试方法论.md"/>
+        </attvalues>
+      </node>
+      <node id="qt-project" label="项目题">
+        <attvalues>
+          <attvalue for="0" value="qtype"/>
+          <attvalue for="1" value="题型"/>
+          <attvalue for="2" value="题型"/>
+          <attvalue for="3" value="介绍项目 + 难点 + 为什么这么决策 + 数据怎么看"/>
+          <attvalue for="4" value="interview/面试方法论.md"/>
+        </attvalues>
+      </node>
+      <node id="qt-plan" label="方案/业务题">
+        <attvalues>
+          <attvalue for="0" value="qtype"/>
+          <attvalue for="1" value="题型"/>
+          <attvalue for="2" value="题型"/>
+          <attvalue for="3" value="设计 Agent / 付费权益 / 判断该不该做"/>
+          <attvalue for="4" value="interview/面试方法论.md"/>
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="root" target="cat-source" label="属于">
+        <attvalues>
+          <attvalue for="0" value="属于"/>
+        </attvalues>
+      </edge>
+      <edge id="1" source="root" target="cat-interviewer" label="属于">
+        <attvalues>
+          <attvalue for="0" value="属于"/>
+        </attvalues>
+      </edge>
+      <edge id="2" source="root" target="cat-project" label="属于">
+        <attvalues>
+          <attvalue for="0" value="属于"/>
+        </attvalues>
+      </edge>
+      <edge id="3" source="root" target="cat-agent" label="属于">
+        <attvalues>
+          <attvalue for="0" value="属于"/>
+        </attvalues>
+      </edge>
+      <edge id="4" source="root" target="cat-byte" label="属于">
+        <attvalues>
+          <attvalue for="0" value="属于"/>
+        </attvalues>
+      </edge>
+      <edge id="5" source="root" target="cat-2026" label="属于">
+        <attvalues>
+          <attvalue for="0" value="属于"/>
+        </attvalues>
+      </edge>
+      <edge id="6" source="root" target="cat-others" label="属于">
+        <attvalues>
+          <attvalue for="0" value="属于"/>
+        </attvalues>
+      </edge>
+      <edge id="7" source="cat-source" target="co-interviewer" label="来源">
+        <attvalues>
+          <attvalue for="0" value="来源"/>
+        </attvalues>
+      </edge>
+      <edge id="8" source="cat-source" target="co-byte" label="来源">
+        <attvalues>
+          <attvalue for="0" value="来源"/>
+        </attvalues>
+      </edge>
+      <edge id="9" source="cat-source" target="co-27" label="来源">
+        <attvalues>
+          <attvalue for="0" value="来源"/>
+        </attvalues>
+      </edge>
+      <edge id="10" source="cat-source" target="co-aiuc" label="来源">
+        <attvalues>
+          <attvalue for="0" value="来源"/>
+        </attvalues>
+      </edge>
+      <edge id="11" source="cat-source" target="co-dreame" label="来源">
+        <attvalues>
+          <attvalue for="0" value="来源"/>
+        </attvalues>
+      </edge>
+      <edge id="12" source="cat-source" target="co-baidu" label="来源">
+        <attvalues>
+          <attvalue for="0" value="来源"/>
+        </attvalues>
+      </edge>
+      <edge id="13" source="cat-interviewer" target="co-interviewer" label="涉及">
+        <attvalues>
+          <attvalue for="0" value="涉及"/>
+        </attvalues>
+      </edge>
+      <edge id="14" source="cat-project" target="co-interviewer" label="涉及">
+        <attvalues>
+          <attvalue for="0" value="涉及"/>
+        </attvalues>
+      </edge>
+      <edge id="15" source="cat-agent" target="co-interviewer" label="涉及">
+        <attvalues>
+          <attvalue for="0" value="涉及"/>
+        </attvalues>
+      </edge>
+      <edge id="16" source="cat-byte" target="co-byte" label="涉及">
+        <attvalues>
+          <attvalue for="0" value="涉及"/>
+        </attvalues>
+      </edge>
+      <edge id="17" source="cat-2026" target="co-27" label="涉及">
+        <attvalues>
+          <attvalue for="0" value="涉及"/>
+        </attvalues>
+      </edge>
+      <edge id="18" source="cat-others" target="co-aiuc" label="涉及">
+        <attvalues>
+          <attvalue for="0" value="涉及"/>
+        </attvalues>
+      </edge>
+      <edge id="19" source="cat-others" target="co-dreame" label="涉及">
+        <attvalues>
+          <attvalue for="0" value="涉及"/>
+        </attvalues>
+      </edge>
+      <edge id="20" source="cat-others" target="co-baidu" label="涉及">
+        <attvalues>
+          <attvalue for="0" value="涉及"/>
+        </attvalues>
+      </edge>
+      <edge id="21" source="co-interviewer" target="t-rag" label="考察">
+        <attvalues>
+          <attvalue for="0" value="考察"/>
+        </attvalues>
+      </edge>
+      <edge id="22" source="co-interviewer" target="t-evalset" label="考察">
+        <attvalues>
+          <attvalue for="0" value="考察"/>
+        </attvalues>
+      </edge>
+      <edge id="23" source="co-interviewer" target="t-badcase" label="考察">
+        <attvalues>
+          <attvalue for="0" value="考察"/>
+        </attvalues>
+      </edge>
+      <edge id="24" source="co-interviewer" target="t-dataloop" label="考察">
+        <attvalues>
+          <attvalue for="0" value="考察"/>
+        </attvalues>
+      </edge>
+      <edge id="25" source="co-byte" target="t-rag" label="考察">
+        <attvalues>
+          <attvalue for="0" value="考察"/>
+        </attvalues>
+      </edge>
+      <edge id="26" source="co-byte" target="t-faq" label="考察">
+        <attvalues>
+          <attvalue for="0" value="考察"/>
+        </attvalues>
+      </edge>
+      <edge id="27" source="co-byte" target="t-evalset" label="考察">
+        <attvalues>
+          <attvalue for="0" value="考察"/>
+        </attvalues>
+      </edge>
+      <edge id="28" source="co-byte" target="t-mock" label="考察">
+        <attvalues>
+          <attvalue for="0" value="考察"/>
+        </attvalues>
+      </edge>
+      <edge id="29" source="co-byte" target="t-fresh" label="考察">
+        <attvalues>
+          <attvalue for="0" value="考察"/>
+        </attvalues>
+      </edge>
+      <edge id="30" source="co-byte" target="t-agent" label="考察">
+        <attvalues>
+          <attvalue for="0" value="考察"/>
+        </attvalues>
+      </edge>
+      <edge id="31" source="co-byte" target="t-cot" label="考察">
+        <attvalues>
+          <attvalue for="0" value="考察"/>
+        </attvalues>
+      </edge>
+      <edge id="32" source="co-byte" target="t-badcase" label="考察">
+        <attvalues>
+          <attvalue for="0" value="考察"/>
+        </attvalues>
+      </edge>
+      <edge id="33" source="co-byte" target="t-skills" label="考察">
+        <attvalues>
+          <attvalue for="0" value="考察"/>
+        </attvalues>
+      </edge>
+      <edge id="34" source="co-byte" target="t-dataloop" label="考察">
+        <attvalues>
+          <attvalue for="0" value="考察"/>
+        </attvalues>
+      </edge>
+      <edge id="35" source="co-27" target="t-workflow" label="考察">
+        <attvalues>
+          <attvalue for="0" value="考察"/>
+        </attvalues>
+      </edge>
+      <edge id="36" source="co-27" target="t-skills" label="考察">
+        <attvalues>
+          <attvalue for="0" value="考察"/>
+        </attvalues>
+      </edge>
+      <edge id="37" source="co-27" target="t-vibe" label="考察">
+        <attvalues>
+          <attvalue for="0" value="考察"/>
+        </attvalues>
+      </edge>
+      <edge id="38" source="co-27" target="t-aitools" label="考察">
+        <attvalues>
+          <attvalue for="0" value="考察"/>
+        </attvalues>
+      </edge>
+      <edge id="39" source="co-27" target="t-agent" label="考察">
+        <attvalues>
+          <attvalue for="0" value="考察"/>
+        </attvalues>
+      </edge>
+      <edge id="40" source="co-aiuc" target="t-rag" label="考察">
+        <attvalues>
+          <attvalue for="0" value="考察"/>
+        </attvalues>
+      </edge>
+      <edge id="41" source="co-aiuc" target="t-ethics" label="考察">
+        <attvalues>
+          <attvalue for="0" value="考察"/>
+        </attvalues>
+      </edge>
+      <edge id="42" source="co-aiuc" target="t-dataloop" label="考察">
+        <attvalues>
+          <attvalue for="0" value="考察"/>
+        </attvalues>
+      </edge>
+      <edge id="43" source="co-dreame" target="t-agent" label="考察">
+        <attvalues>
+          <attvalue for="0" value="考察"/>
+        </attvalues>
+      </edge>
+      <edge id="44" source="co-baidu" target="t-aitools" label="考察">
+        <attvalues>
+          <attvalue for="0" value="考察"/>
+        </attvalues>
+      </edge>
+      <edge id="45" source="cat-interviewer" target="t-rag" label="提炼">
+        <attvalues>
+          <attvalue for="0" value="提炼"/>
+        </attvalues>
+      </edge>
+      <edge id="46" source="cat-interviewer" target="t-evalset" label="提炼">
+        <attvalues>
+          <attvalue for="0" value="提炼"/>
+        </attvalues>
+      </edge>
+      <edge id="47" source="cat-interviewer" target="t-badcase" label="提炼">
+        <attvalues>
+          <attvalue for="0" value="提炼"/>
+        </attvalues>
+      </edge>
+      <edge id="48" source="cat-interviewer" target="t-dataloop" label="提炼">
+        <attvalues>
+          <attvalue for="0" value="提炼"/>
+        </attvalues>
+      </edge>
+      <edge id="49" source="cat-project" target="t-rag" label="提炼">
+        <attvalues>
+          <attvalue for="0" value="提炼"/>
+        </attvalues>
+      </edge>
+      <edge id="50" source="cat-project" target="t-evalset" label="提炼">
+        <attvalues>
+          <attvalue for="0" value="提炼"/>
+        </attvalues>
+      </edge>
+      <edge id="51" source="cat-project" target="t-badcase" label="提炼">
+        <attvalues>
+          <attvalue for="0" value="提炼"/>
+        </attvalues>
+      </edge>
+      <edge id="52" source="cat-agent" target="t-agent" label="提炼">
+        <attvalues>
+          <attvalue for="0" value="提炼"/>
+        </attvalues>
+      </edge>
+      <edge id="53" source="cat-agent" target="t-workflow" label="提炼">
+        <attvalues>
+          <attvalue for="0" value="提炼"/>
+        </attvalues>
+      </edge>
+      <edge id="54" source="cat-agent" target="t-cot" label="提炼">
+        <attvalues>
+          <attvalue for="0" value="提炼"/>
+        </attvalues>
+      </edge>
+      <edge id="55" source="cat-agent" target="t-skills" label="提炼">
+        <attvalues>
+          <attvalue for="0" value="提炼"/>
+        </attvalues>
+      </edge>
+      <edge id="56" source="t-rag" target="qt-concept" label="题型">
+        <attvalues>
+          <attvalue for="0" value="题型"/>
+        </attvalues>
+      </edge>
+      <edge id="57" source="t-faq" target="qt-concept" label="题型">
+        <attvalues>
+          <attvalue for="0" value="题型"/>
+        </attvalues>
+      </edge>
+      <edge id="58" source="t-agent" target="qt-concept" label="题型">
+        <attvalues>
+          <attvalue for="0" value="题型"/>
+        </attvalues>
+      </edge>
+      <edge id="59" source="t-agent" target="qt-plan" label="题型">
+        <attvalues>
+          <attvalue for="0" value="题型"/>
+        </attvalues>
+      </edge>
+      <edge id="60" source="t-workflow" target="qt-concept" label="题型">
+        <attvalues>
+          <attvalue for="0" value="题型"/>
+        </attvalues>
+      </edge>
+      <edge id="61" source="t-skills" target="qt-concept" label="题型">
+        <attvalues>
+          <attvalue for="0" value="题型"/>
+        </attvalues>
+      </edge>
+      <edge id="62" source="t-cot" target="qt-concept" label="题型">
+        <attvalues>
+          <attvalue for="0" value="题型"/>
+        </attvalues>
+      </edge>
+      <edge id="63" source="t-ethics" target="qt-concept" label="题型">
+        <attvalues>
+          <attvalue for="0" value="题型"/>
+        </attvalues>
+      </edge>
+      <edge id="64" source="t-vibe" target="qt-plan" label="题型">
+        <attvalues>
+          <attvalue for="0" value="题型"/>
+        </attvalues>
+      </edge>
+      <edge id="65" source="t-aitools" target="qt-plan" label="题型">
+        <attvalues>
+          <attvalue for="0" value="题型"/>
+        </attvalues>
+      </edge>
+      <edge id="66" source="t-mock" target="qt-plan" label="题型">
+        <attvalues>
+          <attvalue for="0" value="题型"/>
+        </attvalues>
+      </edge>
+      <edge id="67" source="t-fresh" target="qt-plan" label="题型">
+        <attvalues>
+          <attvalue for="0" value="题型"/>
+        </attvalues>
+      </edge>
+      <edge id="68" source="t-dataloop" target="qt-plan" label="题型">
+        <attvalues>
+          <attvalue for="0" value="题型"/>
+        </attvalues>
+      </edge>
+      <edge id="69" source="t-badcase" target="qt-project" label="题型">
+        <attvalues>
+          <attvalue for="0" value="题型"/>
+        </attvalues>
+      </edge>
+      <edge id="70" source="t-evalset" target="qt-concept" label="题型">
+        <attvalues>
+          <attvalue for="0" value="题型"/>
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
